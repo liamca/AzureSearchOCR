@@ -95,7 +95,8 @@ namespace AzureSearchOCR
                 }
 
                 // Take the resulting orcText and upload to a new Azure Search Index
-                // It is highly recommended that you upload 
+                // It is highly recommended that you upload documents in batches rather 
+                // individually like is done here
                 if (ocrText.Length > 0)
                 {
                     Console.WriteLine("Uploading extracted text to Azure Search...");

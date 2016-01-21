@@ -104,9 +104,15 @@ namespace AzureSearchOCR
                     AzureSearch.UploadDocuments(indexClient, fileId, fileNameOnly, ocrText);
                 }
 
-                Console.WriteLine("All done.  Press any key to continue.");
-                Console.ReadLine();
             }
+
+            // Execute a test search 
+            Console.WriteLine("Execute Search...");
+            AzureSearch.SearchDocuments(indexClient, "Azure Search");
+
+            Console.WriteLine("All done.  Press any key to continue.");
+            Console.ReadLine();
+
         }
     }
 }

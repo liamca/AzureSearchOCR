@@ -62,5 +62,28 @@ namespace AzureSearchOCR
 
         }
 
+
+        public static void SearchDocuments(SearchIndexClient indexClient, string searchText)
+        {
+            // Search using the supplied searchText and output documents that match 
+            try
+            {
+                var sp = new SearchParameters();
+
+                DocumentSearchResponse<OCRTextIndex> response = indexClient.Documents.Search<OCRTextIndex>(searchText, sp);
+                foreach (SearchResult<OCRTextIndex> result in response)
+                {
+                    Console.WriteLine("File ID: {0}", result.Document.fileId);
+                    Console.WriteLine("File Name: {0}", result.Document.fileName);
+                    Console.WriteLine("Extracted Text: {0}", result.Document.ocrText);
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Failed search: {0}", e.Message.ToString());
+            }
+
+        }
+
     }
 }

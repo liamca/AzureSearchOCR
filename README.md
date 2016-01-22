@@ -11,3 +11,12 @@ This is a sample of how to leverage Optical Character Recognition (OCR) to extra
 Once the text is uploaded to Azure Search, we can then do full text search over the text in the images.
 
 ![Demo Screen Shot](https://raw.githubusercontent.com/liamca/AzureSearchOCR/master/output.png)
+
+## Requirements
+
+Here are some things that you will need to run this sample:
+* **Project Oxford Vision API** which you can get [from here](https://www.projectoxford.ai/vision)
+* **Azure Search** Service and subscription.  You might want to simply create one of the [free Azure Search services](https://azure.microsoft.com/en-us/pricing/details/search/)
+
+## Special Thanks
+Special thanks to Jerome Viveiros who wrote a great sample on how to use iTextSharp on [his blog](https://psycodedeveloper.wordpress.com/2013/01/10/how-to-extract-images-from-pdf-files-using-c-and-itextsharp/) which formed a basis of much of what I used in my sample that extracts the images from the PDF file.

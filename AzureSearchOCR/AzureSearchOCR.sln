@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureSearchOCR", "AzureSearchOCR\AzureSearchOCR.csproj", "{9D100F4D-BA20-49F6-A080-79908F8E7D76}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureSearchOCRwithKeywordExtraction", "AzureSearchOCRwithKeywordExtraction\AzureSearchOCRwithKeywordExtraction.csproj", "{5CE9F461-CAB2-4476-8E37-92BDDF0DF95C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{9D100F4D-BA20-49F6-A080-79908F8E7D76}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9D100F4D-BA20-49F6-A080-79908F8E7D76}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9D100F4D-BA20-49F6-A080-79908F8E7D76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CE9F461-CAB2-4476-8E37-92BDDF0DF95C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CE9F461-CAB2-4476-8E37-92BDDF0DF95C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CE9F461-CAB2-4476-8E37-92BDDF0DF95C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CE9F461-CAB2-4476-8E37-92BDDF0DF95C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
